@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home" class="cabecalho">
+        
+        <h1>FIAP MUSIC</h1>
+      <nav class="cabecalho-menu">
+        <a class="cabecalho-menu-item">Suporte</a>
+        <a class="cabecalho-menu-item">Planos</a>
+        <a class="cabecalho-menu-item">Baixar</a>
+        <a class="cabecalho-menu-item">Entrar</a>
+      </nav>
+      <div class="hamburguer">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#texto-medio">
+                    <i class="fa-solid fa-user"></i>
+                    Sobre
+                </a>
+            </li>
+            <li>
+                <a href="#planos">
+                    <i class="fa-solid fa-code"></i>
+                    Inscreva-se
+                </a>
+            </li>
+            <li>
+                <a href="#planos">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Planos
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        
+        
+
+        <section class="section-presentation">
+            <div class="escute" id="texto-apresentacao">
+                <h2>Escute milhões de musicas de graça</h2>
+                <a href="#" class="botao">Saiba mais</a>
+            </div>
+                
+
+        </section>
+    </main>
+
+    <section>
+        <div id="texto-medio">
+            <img class="medio" src="./imagem/medio.jpg" alt="medio">
+            <h2>Por que escolher a Fiap Music?</h2>
+            <p>Conte pra gente o que você gosta de ouvir, e nós vamos recomendar músicas para você</p>
+            <p>Playlists mais fáceis de usar</p>
+        </div>
+    </section>
+    <section class="section-planos">
+        <h2>Conheça os nossos Planos</h2>
+        <ul>
+            <li>
+                <div class="card-image">
+                    <img src="./imagem/Individual.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>Individual</h3>
+                    <h4>R$ 15,90/mês</h4>
+                    <p>Ouça músicas sem anúncios</p>
+                    <a href="#planos" class="botao_plano">Assinar</a>
+                </div>
+            </li>
+            <li>
+                <div class="card-image">
+                    <img src="./imagem/Family.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>Familiar</h3>
+                    <h4>R$ 29,90/mês</h4>
+                    <p>4 contas Premium para familiares</p>
+                    <a href="#planos" class="botao_plano">Assinar</a>
+                </div>
+            </li>
+            <li>
+                <div class="card-image">
+                    <img src="./imagem/College.jpg" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>Universitário</h3>
+                    <h4>R$ 9,90/mês</h4>
+                    <p>Desconto especial para estudantes</p>
+                    <a href="#planos" class="botao_plano">Assinar</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id = "planos" class="planos" large-only>
+        <form action="">
+            <h3 class="planos_title">Planos</h3>
+            <label for="js">Qual plano deseja?</label>
+            <br>
+            <select class="chosen-value" name="Planos">
+                    <option value="Individual">Individual - R$ 15,90/mês </option>
+                    <option value="Familiar">Familiar - R$ 29,90/mês</option>
+                    <option value="Universitário">Universitário - R$ 9,90/mês </option>
+            </select>
+            <br>
+            <label for="js">Você já possui uma conta?</label>
+            <br>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="maior_sim">Sim, já tenho uma conta</label>
+                <br>
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="maior_nao">Não, ainda não tenho uma conta</label>
+                <br>
+                <label  for="Meses" id="label_prazo">Meses</label>
+                <input class= "Meses" type="range" id="Meses" min="1" max="12">
+                <output id="output">R$ 0,00</output>
+                <br>
+                <br>
+                <button class="botao" type="button"
+                onclick="Evento()">Assinar</button>
+                <br>
+            </div>
+        </form>
+    </section>
+<script src="./JS/planos.js"></script>
+<script src="./JS/menu.js"></script>
+</body>
+</html>

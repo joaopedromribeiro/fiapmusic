@@ -119,8 +119,10 @@ body {
 
 section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
-  padding: 8.6rem;
+  padding: 4.6rem;
 }
 
 .section-presentation {
@@ -135,9 +137,10 @@ section {
 }
 .medio{
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  animation: zoom 10s ease-in-out;
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  margin: 20px;
 }
 #texto-apresentacao{
   display: flex;
@@ -146,11 +149,29 @@ section {
   gap: 2rem;
 }
 
+#imagem-media{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 #texto-medio{
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: center;
   gap: 2rem;
+}
+
+#texto-medio h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#texto-medio p {
+  font-size: 18px;
+  margin: 10px;
+  text-align: center;
 }
 .section-planos {
   display: flex;
